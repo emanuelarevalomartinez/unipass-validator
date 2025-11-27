@@ -17,10 +17,11 @@
     }
   },
   "scripts": {
-    "build:root": "tsc --project tsconfig.json",
     "build:node": "tsc --project tsconfig.node.json",
     "build:browser": "tsc --project tsconfig.browser.json",
-    "build": "npm run build:root && npm run build:node && npm run build:browser"
+    "build": "npm run build:node && npm run build:browser",
+    "pack:npm": "npm pack",
+    "publish:npm": "npm publish --access public"
   },
   "dependencies": {
     "zxcvbn": "^4.4.2"
@@ -29,5 +30,22 @@
     "@types/node": "^22.7.4",
     "@types/zxcvbn": "^4.4.5",
     "typescript": "^5.3.3"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emanuelarevalomartinez/unipass-validator.git"
+  },
+  "keywords": [
+    "password",
+    "validation",
+    "strength",
+    "typescript",
+    "node",
+    "browser",
+    "security"
+  ]
 }

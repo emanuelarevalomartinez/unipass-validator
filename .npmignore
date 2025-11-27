@@ -1,0 +1,6 @@
+src/
+tsconfig*.json
+tsconfig.browser.json
+tsconfig.node.json
+*.log
+node_modules/
