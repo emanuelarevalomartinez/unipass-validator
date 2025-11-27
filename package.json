@@ -1,0 +1,33 @@
+{
+  "name": "unipass-validator",
+  "version": "0.1.0",
+  "description": "Advanced and universal password validation for browser and Node.js environments. Includes strength scoring, blacklist check, and adaptive security rules.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/node/index.js",
+  "module": "./dist/browser/index.js",
+  "exports": {
+    "./browser": {
+      "import": "./dist/browser/index.js",
+      "types": "./dist/browser/types/index.d.ts"
+    },
+    "./node": {
+      "import": "./dist/node/index.js",
+      "types": "./dist/node/types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build:root": "tsc --project tsconfig.json",
+    "build:node": "tsc --project tsconfig.node.json",
+    "build:browser": "tsc --project tsconfig.browser.json",
+    "build": "npm run build:root && npm run build:node && npm run build:browser"
+  },
+  "dependencies": {
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/zxcvbn": "^4.4.5",
+    "typescript": "^5.3.3"
+  }
+}
