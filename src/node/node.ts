@@ -1,14 +1,7 @@
-import fs from "fs";
-import path from "path";
 import zxcvbn from "zxcvbn";
+import { blacklist } from "./black_list.js";
 
-const blacklistPath = path.join(__dirname, "black_list.txt");
-const blacklisted = new Set(
-  fs.readFileSync(blacklistPath, "utf-8")
-    .split("\n")
-    .map(p => p.trim())
-    .filter(p => p.length > 0)
-);
+const blacklisted = new Set(blacklist);
 
 export function isInBlacklist(password: string): boolean {
   return blacklisted.has(password);

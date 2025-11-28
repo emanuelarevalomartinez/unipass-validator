@@ -5,7 +5,6 @@
     "rootDir": "src/browser",
     "module": "ESNext",
     "declaration": true,
-    "declarationDir": "dist/browser/types"
   },
   "include": ["src/browser/**/*"]
 }

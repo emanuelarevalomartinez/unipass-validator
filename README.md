@@ -136,3 +136,7 @@ Feedback, features & issues welcome! 🚀
 ## 📝 License
 
 Apache License 2.0 — free for personal and commercial use.
+
+## 🔗 Repository
+
+[GitHub - UniPass Validator](https://github.com/emanuelarevalomartinez/unipass-validator)
