@@ -21,6 +21,7 @@ UniPass Validator is a lightweight dual-bundle library designed to evaluate pass
 * 🧩 TypeScript Ready: Types built-in for DX excellence.
 
 ## 🚀 Installation
+
 ```bash
 npm install unipass-validator
 # or
@@ -86,6 +87,7 @@ interface PasswordAnalysis {
 ```
 
 ## 📊 Password Strength Scale
+
 | Score | Strength      | Recommended?            |
 |-------|---------------|-------------------------|
 | 0     | Very Weak     | ❌ No                   |
@@ -97,20 +99,27 @@ interface PasswordAnalysis {
 
 
 ## 🌐 Compatibility
+
 * Node.js 14+	✔ Supported
 * Browser ESM	✔ Supported
 * Typescript	✔ Full typings
 * Hybrid package supports both ESM (browser) and CJS (Node)
 
 ## ✅ Use Cases
+
 ✔ Signup Forms
+
 ✔ Password Strength Meters
+
 ✔ Security Audits
+
 ✔ Enterprise Authentication Rules
+
 ✔ UX-First Password Guidance
 
 
 ## ⚙️ Dev & Build Scripts
+
 You can clone this repository and run the following commands to build the project
 
 ```bash
