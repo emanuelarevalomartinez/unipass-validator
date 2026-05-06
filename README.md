@@ -133,6 +133,41 @@ npm run build:node
 npm run build:browser
 ```
 
+## 🚀 Release & Publish Process
+
+Check Workspace: Ensure there are no uncommitted changes or pending commits to push.
+
+```bash
+git status
+```
+
+Version Bump: Make sure the version in `package.json` is higher than the previous one.
+
+Authentication: Login to your account in the npm registry:
+
+```bash
+npm login
+```
+
+after use token-based authentication:
+
+```bash
+npm config set //registry.npmjs.org/:_authToken=YOUR_TOKEN
+```
+
+Build: Generate the production bundles before publishing.
+
+```bash
+npm run build
+```
+
+Publish: Deploy the package to the registry.
+
+```bash
+npm publish --access public
+```
+
+
 ## 🤝 Contributing
 
 1. Fork
